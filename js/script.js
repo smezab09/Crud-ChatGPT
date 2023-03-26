@@ -25,7 +25,7 @@ const mostrarTareas = () => {
       <div class="estado">${tarea.completado ? "Completado" : "Pendiente"}</div>
       <div class="acciones">
         <button type="button" class="boton-eliminar" data-id="${index}">Eliminar</button>
-        <button type="button" class="boton-actualizar" data-id="${index}">${tarea.completado ? "Reactivar" : "Completar"}</button>
+        <button type="button" class="boton-actualizar" data-id="${index}">${tarea.completado ? "Actualizar" : "Completar"}</button>
       </div>
     `;
     listaTareas.appendChild(div);
