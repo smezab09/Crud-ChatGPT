@@ -1,0 +1,437 @@
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+  }
+  
+  header {
+    background-color: #383e56;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  form {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+  }
+  
+  button[type="submit"] {
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    background-color: #ff5722;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #ff7043;
+  }
+  
+  .lista-tareas {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .lista-tareas li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #f2f2f2;
+  }
+  
+  .lista-tareas li span {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .boton-eliminar {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .boton-actualizar {
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .boton-eliminar:hover {
+    background-color: #e53935;
+  }
+  
+  .boton-actualizar:hover {
+    background-color: #1976d2;
+  }
+  
+  footer {
+    background-color: #383e56;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  @media screen and  (max-width: 375px) {
+    /* iPhone 11 */
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+    
+      header button {
+        margin-top: 1rem;
+      }
+
+    main {
+      padding: 10px;
+    }
+  
+    input[type="text"] {
+      padding: 5px;
+      font-size: 14px;
+    }
+  
+    button[type="submit"] {
+      padding: 5px;
+      font-size: 14px;
+    }
+  
+    .lista-tareas li {
+      padding: 5px;
+      font-size: 14px;
+    }
+  
+    .boton-eliminar,
+    .boton-actualizar {
+      padding: 3px 5px;
+      font-size: 12px;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+      }
+    
+      footer p {
+        margin-top: 1rem;
+      }
+    
+  }
+  
+  @media screen and (max-width: 390px) {
+    /* iPhone 12 */
+    header {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+    
+      header button {
+        margin-top: 1rem;
+      }
+
+    main {
+      padding: 10px;
+    }
+  
+    input[type="text"] {
+      padding: 5px;
+      font-size: 14px;
+    }
+  
+    button[type="submit"] {
+      padding: 5px;
+      font-size: 14px;
+    }
+  
+    .lista-tareas li {
+      padding: 5px;
+      font-size: 14px;
+    }
+  
+    .boton-eliminar,
+    .boton-actualizar {
+      padding: 3px 5px;
+      font-size: 12px;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+      }
+    
+      footer p {
+        margin-top: 1rem;
+      }
+
+  }
+  
+  @media screen and (max-width: 414px) {
+    /* iPhone 12 Pro */
+    header {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+    
+      header button {
+        margin-top: 1rem;
+      }
+
+    main {
+      padding: 10px;
+    }
+  
+    input[type="text"] {
+      padding: 5px;
+      font-size: 14px;
+    }
+  
+    button[type="submit"] {
+      padding: 5px;
+      font-size: 14px;
+    }
+  
+    .lista-tareas li {
+      padding: 5px;
+      font-size: 14px;
+    }
+  
+    .boton-eliminar,
+    .boton-actualizar {
+      padding: 3px 5px;
+      font-size: 12px;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+      }
+    
+      footer p {
+        margin-top: 1rem;
+      }
+
+  }
+  
+  @media screen and (max-width: 428px) {
+    /* Samsung Galaxy S23 */
+    header {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+    
+      header button {
+        margin-top: 1rem;
+      }
+
+    main {
+      padding: 10px;
+    }
+  
+    input[type="text"] {
+      padding: 5px;
+      font-size: 14px;
+    }
+  
+    button[type="submit"] {
+      padding: 5px;
+      font-size: 14px;
+    }
+  
+    .lista-tareas li {
+      padding: 5px;
+      font-size: 14px;
+    }
+  
+    .boton-eliminar,
+    .boton-actualizar {
+      padding: 3px 5px;
+      font-size: 12px;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+      }
+    
+      footer p {
+        margin-top: 1rem;
+      }
+
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* iPad */
+    header {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+    
+      header button {
+        margin-top: 1rem;
+      }
+
+    main {
+      max-width: 90%;
+    }
+  
+    input[type="text"] {
+      font-size: 18px;
+    }
+  
+    button[type="submit"] {
+      font-size: 18px;
+    }
+  
+    .lista-tareas li {
+      font-size: 18px;
+    }
+  
+    .boton-eliminar,
+    .boton-actualizar {
+      font-size: 14px;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+      }
+    
+      footer p {
+        margin-top: 1rem;
+      }
+
+  }
+
+  @media screen and (max-width: 800px) {
+    
+    header {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+    
+      header button {
+        margin-top: 1rem;
+      }
+
+    main {
+      max-width: 90%;
+    }
+  
+    input[type="text"] {
+      font-size: 18px;
+    }
+  
+    button[type="submit"] {
+      font-size: 18px;
+    }
+  
+    .lista-tareas li {
+      font-size: 18px;
+    }
+  
+    .boton-eliminar,
+    .boton-actualizar {
+      font-size: 14px;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+      }
+    
+      footer p {
+        margin-top: 1rem;
+      }
+
+  }
+
+  @media screen and (max-width: 1200px) {
+    
+    header {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+    
+      header button {
+        margin-top: 1rem;
+      }
+
+    main {
+      max-width: 90%;
+    }
+  
+    input[type="text"] {
+      font-size: 18px;
+    }
+  
+    button[type="submit"] {
+      font-size: 18px;
+    }
+  
+    .lista-tareas li {
+      font-size: 18px;
+    }
+  
+    .boton-eliminar,
+    .boton-actualizar {
+      font-size: 14px;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+      }
+    
+      footer p {
+        margin-top: 1rem;
+      }
+
+  }
